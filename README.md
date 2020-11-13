@@ -1,1 +1,2 @@
 # cisc3130Lab6
+  This is code for Lab 6 for CISC3130 Section TY9 for Professor Katherine Chuang. Since this lab was left up to interpretation I decided to just create a system.out format in which the user inputs numbers and then it just goes through an array and sets it in the array. 0 representing the Lab, 1 is the practice problems, 2 is the midterm and 3 is the final exam. We would add all these up in the end and a method would tell you how many points are needed to get the next letter grade.
