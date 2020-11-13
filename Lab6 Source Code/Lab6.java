@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Lab6 {
 	public static void showGrade(int totalGrade, PrintWriter outputWriter) { // Shows current state of grades
 		int neededGrade=0;
-			if(totalGrade <60) {
+			if(totalGrade <60) {// Each if statement looks at grade number and states out the letter grade
 				neededGrade=60-totalGrade;
 				System.out.println("Current Grade :  F needs "+neededGrade +" more points for a D");
 				outputWriter.println("Current Grade :  F needs "+neededGrade +" more points for a D");
@@ -39,7 +39,7 @@ public class Lab6 {
 
 	public static void main(String[]args) throws FileNotFoundException {
 		Scanner keyboard=new Scanner(System.in);
-		File outPut= new File(("D:\\JavaFile\\Lab6 Output Files\\Lab6 Output"));
+		File outPut= new File(("Lab6 Output"));
 		PrintWriter outputWriter = new PrintWriter(outPut);
 		int[] grades=new int[4];
 		int i=0;
@@ -48,7 +48,7 @@ public class Lab6 {
 		int answer= keyboard.nextInt();
 		outputWriter.println(answer);
 		
-		while(answer!=-1) {
+		while(answer!=-1) { // -1 breaks out of the loop and ends array input
 			grades[i]=answer;
 			i++;
 			
@@ -56,8 +56,8 @@ public class Lab6 {
 			outputWriter.println("Enter the total grade of your Practice Problem assignment.(-1 to finish)");
 			answer= keyboard.nextInt();
 			outputWriter.println(answer);
-			grades[i]=answer;
-			i++;
+			grades[i]=answer;//setting the grade to array
+			i++;//itterate
 			
 			System.out.println("Enter the total grade of your Midterm Exams.(-1 to finish)");
 			outputWriter.println("Enter the total grade of your Midterm Exams.(-1 to finish)");
@@ -75,6 +75,7 @@ public class Lab6 {
 			answer=-1;
 			
 		}
+		//Output of grades 
 		System.out.println("Lab Grade: "+grades[0]);
 		outputWriter.println("Lab Grade: "+grades[0]);
 		
@@ -91,6 +92,7 @@ public class Lab6 {
 		for (i=0;i<=3;i++) {
 			totalGrade=totalGrade+grades[i];
 		}
+		//Total grades
 		System.out.println("Our total grade " +totalGrade);
 		outputWriter.println("Our total grade " +totalGrade);
 		
