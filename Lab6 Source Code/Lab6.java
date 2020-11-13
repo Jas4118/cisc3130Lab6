@@ -1,5 +1,7 @@
 package cisc3130Lab6;
-
+//Jason Li
+//CISC3130 Katherine Chuang
+//Lab 6 Due November 15th 2020
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
